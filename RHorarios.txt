@@ -1,0 +1,7 @@
+08/07/2017////08/11/2017////Lunes-Miercoles-Viernes////08:00////12:00////ANGEL////MEDINA////Python////damedina////JORGE////RAMIREZ////AV. EL EJERCITO////ejramirez
+08/07/2017////08/11/2017////Martes-Jueves-Sabado////14:00////18:00////ANGEL////MEDINA////Python////damedina////JORGE////RAMIREZ////AV. EL EJERCITO////ejramirez
+08/07/2017////08/11/2017////Martes-Jueves-Sabado////08:00////12:00////LUIS////ARMIJOS////C++////dlarmijos////DARWIN////ARMIJOS////SAUCES ////edarmijos
+08/07/2017////08/11/2017////Martes-Jueves-Sabado////08:00////12:00////DOMENICA////CHAMBA////Visual Basic////ddchamba////NAOMI////CHAMBA////10 DE AGOSTO////enchamba
+08/07/2017////08/11/2017////Lunes-Miercoles-Viernes////14:00////18:00////LUIS////ARMIJOS////C++////dlarmijos////DARWIN////ARMIJOS////SAUCES ////edarmijos
+08/07/2017////08/11/2017////Martes-Jueves-Sabado////08:00////12:00////ROSA////CABRERA////Python////drprado////ANGEL////MEDINA////28 DE NOVIEMBRE////eamedina
+08/07/2017////08/11/2017////Lunes-Miercoles-Viernes////14:00////18:00////LUIS////ARMIJOS////C++////dlarmijos////ANGEL////MEDINA////28 DE NOVIEMBRE////eamedina
