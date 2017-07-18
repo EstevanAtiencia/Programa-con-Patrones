@@ -56,7 +56,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
         jLabel1.setFont(new java.awt.Font("Arial Black", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("Registrar un nuevo Estudiante");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(199, 21, 239, 32));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, 239, 32));
 
         jLabel2.setText("Nombre");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 71, 135, 30));
@@ -199,7 +199,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
         txtApellido.setText("");
         txtDireccion.setText("");
         cbmEdad.setSelectedIndex(0);
-        txtUsuario.setText("e");
+        txtUsuario.setText("");
         txtPassword.setText("");
     }
 
@@ -260,7 +260,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
 
         JPasswordField pwd = new JPasswordField(10);
-        int action = JOptionPane.showConfirmDialog(null, pwd, "Ingresar Contraseña", JOptionPane.OK_CANCEL_OPTION);
+        int action = JOptionPane.showConfirmDialog(null, pwd, "Ingresar Contraseña de Admin", JOptionPane.OK_CANCEL_OPTION);
         String password=String.valueOf(pwd.getPassword());
         if (password != null) {
             if (password.equals(objFachada.getObjLogin().getStrpassword())) {

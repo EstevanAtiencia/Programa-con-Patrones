@@ -51,6 +51,7 @@ public class FrmRegistroCurso extends javax.swing.JInternalFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
         jButton3 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setClosable(true);
@@ -61,8 +62,8 @@ public class FrmRegistroCurso extends javax.swing.JInternalFrame {
 
         jLabel2.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel2.setText("Registro del curso");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 170, 30));
+        jLabel2.setText("Selecione Docente");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 90, 170, 30));
 
         jLabel3.setText("Hora de Inicio del Curso");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, 120, 20));
@@ -121,7 +122,7 @@ public class FrmRegistroCurso extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(jTable1);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 90, 370, 90));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 130, 370, 90));
 
         jLabel7.setText("Dias:");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 270, 30, 30));
@@ -168,6 +169,11 @@ public class FrmRegistroCurso extends javax.swing.JInternalFrame {
             }
         });
         getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 0, 51));
+        jLabel8.setText("Registro del curso");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 30, 170, 30));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\Documents\\NetBeansProjects\\Proyecto_Patrones\\imagenes\\fondo2.png")); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 860, 540));
@@ -315,13 +321,13 @@ public class FrmRegistroCurso extends javax.swing.JInternalFrame {
         apellidos = (String) jTable1.getValueAt(filaseleccionada, 1);
         lenguaje = (String) jTable1.getValueAt(filaseleccionada, 2);
         usuario = (String) jTable1.getValueAt(filaseleccionada, 3);
-
+        JOptionPane.showMessageDialog(rootPane, "Dato Selecionado");
     }//GEN-LAST:event_jTable1MouseClicked
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 
         JPasswordField pwd = new JPasswordField(10);
-        int action = JOptionPane.showConfirmDialog(null, pwd, "Ingresar Contraseña", JOptionPane.OK_CANCEL_OPTION);
+        int action = JOptionPane.showConfirmDialog(null, pwd, "Ingresar Contraseña de Estudiante", JOptionPane.OK_CANCEL_OPTION);
         String password = String.valueOf(pwd.getPassword());
         if (password != null) {
             if (password.equals(objFachada.getObjLogin().getStrpassword())) {
@@ -361,6 +367,7 @@ public class FrmRegistroCurso extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
