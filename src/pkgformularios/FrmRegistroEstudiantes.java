@@ -8,6 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
+import javax.swing.JPasswordField;
 import pkgclases.ClsFachada;
 
 public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
@@ -258,8 +259,9 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
 
-        String password;
-        password = JOptionPane.showInputDialog(rootPane, "Por Favor Ingrese Password para verificar");
+        JPasswordField pwd = new JPasswordField(10);
+        int action = JOptionPane.showConfirmDialog(null, pwd, "Ingresar Contraseña", JOptionPane.OK_CANCEL_OPTION);
+        String password=String.valueOf(pwd.getPassword());
         if (password != null) {
             if (password.equals(objFachada.getObjLogin().getStrpassword())) {
                 try {
