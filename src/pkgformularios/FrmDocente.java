@@ -42,7 +42,7 @@ public class FrmDocente extends javax.swing.JFrame {
             .addGap(0, 224, Short.MAX_VALUE)
         );
 
-        jMenu1.setText("File");
+        jMenu1.setText("Inicio");
 
         jMenuItem2.setText("Visualizar su curso");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {

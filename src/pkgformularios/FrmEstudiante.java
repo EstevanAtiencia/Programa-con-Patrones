@@ -46,7 +46,7 @@ public class FrmEstudiante extends javax.swing.JFrame {
 
         getContentPane().add(dpnCursos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 860, 510));
 
-        jMenu1.setText("File");
+        jMenu1.setText("Inicio");
 
         jMenuItem2.setText("Registrar el Curso");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {

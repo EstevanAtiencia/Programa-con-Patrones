@@ -42,6 +42,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
         cbmEdad = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         txtPassword = new javax.swing.JPasswordField();
+        txtUsuario1 = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
 
         setClosable(true);
@@ -84,7 +85,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
                 txtNombreKeyTyped(evt);
             }
         });
-        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 71, 297, 30));
+        getContentPane().add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 71, 310, 30));
 
         txtApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -96,22 +97,21 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
                 txtApellidoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 123, 297, 28));
+        getContentPane().add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 123, 310, 28));
 
         txtDireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDireccionActionPerformed(evt);
             }
         });
-        getContentPane().add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 174, 297, 32));
+        getContentPane().add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 174, 310, 32));
 
-        txtUsuario.setText("e");
         txtUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUsuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 258, 297, 29));
+        getContentPane().add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 258, 290, 29));
 
         btnRegistrar.setText("Registrar");
         btnRegistrar.setBorder(new javax.swing.border.MatteBorder(null));
@@ -124,7 +124,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
         getContentPane().add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 120, 86, 37));
 
         cbmEdad.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "----------", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35" }));
-        getContentPane().add(cbmEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, 290, 30));
+        getContentPane().add(cbmEdad, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, 310, 30));
 
         jButton1.setBackground(new java.awt.Color(0, 0, 0));
         jButton1.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
@@ -136,7 +136,16 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 0, -1, -1));
-        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 300, 290, 30));
+        getContentPane().add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 300, 310, 30));
+
+        txtUsuario1.setEditable(false);
+        txtUsuario1.setText("e");
+        txtUsuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuario1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtUsuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 258, 30, 29));
 
         jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Usuario\\Documents\\NetBeansProjects\\Proyecto_Patrones\\imagenes\\fondo.png")); // NOI18N
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 720, 480));
@@ -150,7 +159,7 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
         String apellido = txtApellido.getText().toUpperCase();
         String direccion = txtDireccion.getText().toUpperCase();
         String edad = cbmEdad.getSelectedItem().toString();
-        String usuario = txtUsuario.getText().toLowerCase();
+        String usuario = txtUsuario1.getText() + txtUsuario.getText().toLowerCase();
         String password = txtPassword.getText();
         boolean verifi = true;
         boolean verifi1 = true;
@@ -275,6 +284,10 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void txtUsuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuario1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtUsuario1ActionPerformed
+
     // </editor-fold>  
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -294,5 +307,6 @@ public class FrmRegistroEstudiantes extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtNombre;
     private javax.swing.JPasswordField txtPassword;
     private javax.swing.JTextField txtUsuario;
+    private javax.swing.JTextField txtUsuario1;
     // End of variables declaration//GEN-END:variables
 }
